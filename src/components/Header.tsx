@@ -14,13 +14,13 @@ export default function Header({ onOpenSettings, telegramConfigured, totalMessag
   useEffect(() => {
     const hours = new Date().getHours();
     if (hours >= 5 && hours < 12) {
-      setGreeting("Buongiorno Amore! 🌸");
+      setGreeting("Buongiorno amore 🌸");
     } else if (hours >= 12 && hours < 17) {
-      setGreeting("Buon pomeriggio, tesoro! ☀️");
+      setGreeting("Buon pomeriggio ☀️");
     } else if (hours >= 17 && hours < 22) {
-      setGreeting("Buonasera stella mia! ✨");
+      setGreeting("Che hai fatto oggi? ✨");
     } else {
-      setGreeting("Sogni d'oro, cuore mio! 🌙");
+      setGreeting("Sogni d'oro 🌙");
     }
   }, []);
 
