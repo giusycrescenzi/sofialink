@@ -1,8 +1,9 @@
-name: Deploy to Live
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ] # Cambia in "master" se la tua tab principale si chiama master
+    branches: [ "main" ]
+  workflow_dispatch: # Aggiunto: ti permette di avviare l'azione manualmente con un pulsante!
 
 permissions:
   contents: read
@@ -20,23 +21,29 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Set up Node
+
+      - name: Set up Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22 # Aggiornato come richiesto
           cache: npm
+
       - name: Install dependencies
         run: npm install
-      - name: Build
+
+      - name: Build project
         run: npm run build
-      - name: Setup Pages
+
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './dist' # Vite compila di default in questa cartella
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
