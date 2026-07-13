@@ -21,7 +21,7 @@ export default function EmergencyButton({ onSendEmergency, isSending }: Emergenc
         ) : (
           <>
             <span className="text-lg animate-pulse">🆘</span>
-            <span>HO BISOGNO DI TE! ❤️</span>
+            <span> S.O.S. </span>
           </>
         )}
       </motion.button>
