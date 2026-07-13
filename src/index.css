@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Quicksand', 'Fredoka', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fredoka', 'Quicksand', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #fffafb;
+  color: #4a3e43;
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar to keep it super cute */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fff0f3;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffcbd5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff99ac;
+}
+
+/* Heart pulse animation */
+@keyframes heartPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.animate-heart-pulse {
+  animation: heartPulse 1.5s infinite ease-in-out;
+}
+
+/* Float animation for decorative items */
+@keyframes cuteFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-cute-float {
+  animation: cuteFloat 4s infinite ease-in-out;
+}
+
