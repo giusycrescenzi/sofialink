@@ -34,8 +34,8 @@ export const MOODS: MoodConfig[] = [
     hoverBg: 'hover:bg-purple-50'
   },
   {
-    type: 'Coccole',
-    emoji: '🫂',
+    type: 'Stress',
+    emoji: '😵‍💫',
     label: 'Bisogno di Coccole',
     color: 'text-teal-500',
     bgGradient: 'from-teal-100 to-emerald-100 border-teal-200 hover:from-teal-200 hover:to-emerald-200',
@@ -44,9 +44,9 @@ export const MOODS: MoodConfig[] = [
 ];
 
 export const REQUEST_OPTIONS: RequestConfig[] = [
-  { type: 'Bacio', label: 'Un bacio gigante', emoji: '😘' },
-  { type: 'Coccole', label: 'Coccole e grattini', emoji: '🫂' },
-  { type: 'Gelato', label: 'Gelato o Dolcetto', emoji: '🍦' },
-  { type: 'Attenzioni', label: 'Tante attenzioni', emoji: '🥺' },
+  { type: 'Bacio', label: 'Un bacio singolo', emoji: '😘' },
+  { type: 'Foto', label: 'Pensi solo a quello', emoji: '😏' },
+  { type: 'Cibo', label: 'Il Mc fa male', emoji: '🐮' },
+  { type: 'Attenzioni', label: 'Tante attenzioni', emoji: '🐰' },
   { type: 'Altro', label: 'Qualcos\'altro...', emoji: '✨' }
 ];
