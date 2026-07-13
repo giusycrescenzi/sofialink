@@ -44,9 +44,9 @@ export const MOODS: MoodConfig[] = [
 ];
 
 export const REQUEST_OPTIONS: RequestConfig[] = [
-  { type: 'Bacio', label: 'Un bacio singolo', emoji: '😘' },
-  { type: 'Foto', label: 'Pensi solo a quello', emoji: '😏' },
-  { type: 'Cibo', label: 'Il Mc fa male', emoji: '🐮' },
-  { type: 'Attenzioni', label: 'Tante attenzioni', emoji: '🐰' },
-  { type: 'Altro', label: 'Qualcos\'altro...', emoji: '✨' }
+  { type: 'Bacio', label: 'Bacio', emoji: '😘' },
+  { type: 'Foto', label: 'Foto', emoji: '😏' },
+  { type: 'Cibo', label: 'Cibo', emoji: '🐮' },
+  { type: 'Attenzioni', label: 'Attenzioni', emoji: '🐰' },
+  { type: 'Altro', label: 'Altro', emoji: '✨' }
 ];
