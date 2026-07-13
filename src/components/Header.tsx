@@ -73,7 +73,7 @@ export default function Header({ onOpenSettings, telegramConfigured, totalMessag
         </div>
 
         <h1 className="font-display font-bold text-2xl tracking-tight text-pink-600">
-          S-Link
+          Sofia-Link
         </h1>
         <p className="mt-1 text-xs text-pink-500/80 font-semibold italic">
           {greeting}
