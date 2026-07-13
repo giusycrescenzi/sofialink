@@ -1,6 +1,6 @@
 {
-  "name": "Cuore App",
-  "description": "Un'applicazione romantica e interattiva per condividere umore, pensieri e richieste speciali.",
+  "name": "SLink",
+  "description": "Metodo ottimizzato di comunicazione",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
