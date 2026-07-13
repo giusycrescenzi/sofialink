@@ -184,7 +184,7 @@ export default function App() {
       triggerConfetti('pink');
       setNotification({
         show: true,
-        message: "Il tuo pensiero romantico è stato spedito! 💖",
+        message: "Il tuo pensiero è stato spedito.",
         simulated: result.simulated
       });
     } else {
@@ -199,7 +199,7 @@ export default function App() {
   // 4. Send Emergency Action
   const handleSendEmergency = async () => {
     setIsSending(true);
-    const textMsg = `🚨 <b>SOS EMERGENZA DA AMORE</b> 🚨\n\nHo bisogno di te IMMEDIATAMENTE! Chiamami subito o vieni da me! ❤️📱`;
+    const textMsg = `🚨 <b>SOS EMERGENZA DA AMORE</b> 🚨\n\nHo bisogno di te IMMEDIATAMENTE! Chiamami subito o vieni da me!`;
 
     const result = await sendTelegramNotification(textMsg, settings);
     setIsSending(false);
